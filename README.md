@@ -1,6 +1,6 @@
-# SequelizeCLI_Migrations_Associations
+## Coffee Shop App
 
-### In this App, we need 4 dependencies below:
+### In this App, we need 5 dependencies below:
 
 - Express
 - Sequelize && Sequelize CLI
