@@ -3,7 +3,7 @@
 ### In this App, we need 5 dependencies below:
 
 - Express
-- Sequelize && Sequelize CLI
+- Sequelize & Sequelize CLI
 - MySQL (mysql driver for node.js)
 - Body-parser (middleware for handling post body request)
 - Handlebars (template engine)
