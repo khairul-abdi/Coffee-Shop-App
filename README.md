@@ -20,7 +20,7 @@ $ config/sequelize_migrations.sql
 
 # Start App
 
-$ node app.js
+$ node server.js
 
 App Run On: http://localhost:5000
 
