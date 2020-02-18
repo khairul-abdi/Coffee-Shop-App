@@ -12,7 +12,7 @@
   
 ```bash
 # Install dependencies
-npm install
+$ npm install
 
 # Database
 
