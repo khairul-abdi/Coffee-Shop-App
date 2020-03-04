@@ -1,9 +1,9 @@
-# SequelizeCLI_Migrations_Associations
+## Coffee Shop App
 
-### In this App, we need 4 dependencies below:
+### In this App, we need 5 dependencies below:
 
 - Express
-- Sequelize && Sequelize CLI
+- Sequelize & Sequelize CLI
 - MySQL (mysql driver for node.js)
 - Body-parser (middleware for handling post body request)
 - Handlebars (template engine)
@@ -20,7 +20,7 @@ $ config/sequelize_migrations.sql
 
 # Start App
 
-$ node app.js
+$ node server.js
 
 App Run On: http://localhost:5000
 
