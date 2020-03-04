@@ -12,8 +12,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {});
   coffee.associate = function(models) {
-    // coffee belongsTo Shop
-    coffee.belongsTo(models.shop, { 
+    // Coffe belongsTo Shop
+    coffee.belongsTo(models.shop, {
       foreignKey: 'id',
       target_Key: 'shopId'
     })

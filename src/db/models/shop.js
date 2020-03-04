@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING
   }, {});
   shop.associate = function(models) {
-    // shop hasMany Coffess
+    // shop hasMany Coffee
     shop.hasMany(models.coffee, {
       foreignKey: 'shopId'
     })
