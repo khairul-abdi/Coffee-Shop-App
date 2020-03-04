@@ -6,10 +6,10 @@ const Shop = require('./models').shop
 const Coffee = require('./models').coffee
 
 // Shop.create({
-//   name: 'Koupie'
+//   name: 'Semerbak Wangi'
 // }).then(shop => {
 //   shop.createCoffee({
-//     name: 'Kopi Aceh',
+//     name: 'Kopi Wangi',
 //     type: 'Dark'
 //   }).then(() => console.log('Worked!'))
 // })
