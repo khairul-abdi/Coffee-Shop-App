@@ -16,7 +16,7 @@ $ npm install
 
 # Database
 
-$ config/sequelize_migrations.sql
+$ src/db/config/sequelize_migrations.sql
 
 # Start App
 
