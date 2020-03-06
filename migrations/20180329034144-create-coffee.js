@@ -23,12 +23,7 @@ module.exports = {
         type: Sequelize.DATE
       },
       shopId: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'shops',
-          key: 'id'
-        },
-        onDelete: 'CASCADE'
+        type: Sequelize.INTEGER
       }
     });
   },

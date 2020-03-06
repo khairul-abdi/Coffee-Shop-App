@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 18, 2020 at 04:00 AM
+-- Generation Time: Mar 04, 2020 at 09:24 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -42,29 +42,11 @@ CREATE TABLE `coffees` (
 --
 
 INSERT INTO `coffees` (`id`, `name`, `type`, `createdAt`, `updatedAt`, `shopId`) VALUES
-(1, 'Kopi Sumatera', 'Dark', '2020-02-18 02:57:01', '2020-02-18 02:57:01', 1),
-(2, 'Columbia', 'Dark', '2020-02-18 02:57:17', '2020-02-18 02:57:17', 2),
-(3, 'Kopi Aceh', 'Dark', '2020-02-18 02:57:31', '2020-02-18 02:57:31', 3),
-(4, 'Kopi Sipirok', 'Dark', '2020-02-18 02:58:36', '2020-02-18 02:58:36', 1),
-(5, 'Koupie Uenak', 'Dark', '2020-02-18 02:59:10', '2020-02-18 02:59:10', 3);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `SequelizeMeta`
---
-
-CREATE TABLE `SequelizeMeta` (
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `SequelizeMeta`
---
-
-INSERT INTO `SequelizeMeta` (`name`) VALUES
-('20180329033305-create-shop.js'),
-('20180329034144-create-coffee.js');
+(1, 'Kopi Sipirok', 'Dark', '2020-03-04 08:20:43', '2020-03-04 08:20:43', 1),
+(2, 'Kopi Columbia', 'Dark', '2020-03-04 08:23:22', '2020-03-04 08:23:22', 2),
+(3, 'Kopi Gayo', 'Dark', '2020-03-04 08:23:31', '2020-03-04 08:23:31', 1),
+(4, 'Kopi Sumatera', 'Dark', '2020-03-04 08:23:47', '2020-03-04 08:23:47', 1),
+(5, 'Kopi India', 'Dark', '2020-03-04 08:23:54', '2020-03-04 08:23:54', 2);
 
 -- --------------------------------------------------------
 
@@ -84,9 +66,8 @@ CREATE TABLE `shops` (
 --
 
 INSERT INTO `shops` (`id`, `name`, `createdAt`, `updatedAt`) VALUES
-(1, 'Otten', '2020-02-18 02:57:01', '2020-02-18 02:57:01'),
-(2, 'Starbuck', '2020-02-18 02:57:17', '2020-02-18 02:57:17'),
-(3, 'Koupie', '2020-02-18 02:57:31', '2020-02-18 02:57:31');
+(1, 'Otten', '2020-03-04 08:17:12', '2020-03-04 08:17:12'),
+(2, 'Starbuck', '2020-03-04 08:18:40', '2020-03-04 08:18:40');
 
 --
 -- Indexes for dumped tables
@@ -96,14 +77,8 @@ INSERT INTO `shops` (`id`, `name`, `createdAt`, `updatedAt`) VALUES
 -- Indexes for table `coffees`
 --
 ALTER TABLE `coffees`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `SequelizeMeta`
---
-ALTER TABLE `SequelizeMeta`
-  ADD PRIMARY KEY (`name`),
-  ADD UNIQUE KEY `name` (`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `shopId` (`shopId`);
 
 --
 -- Indexes for table `shops`
@@ -125,7 +100,7 @@ ALTER TABLE `coffees`
 -- AUTO_INCREMENT for table `shops`
 --
 ALTER TABLE `shops`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
