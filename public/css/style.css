@@ -19,6 +19,7 @@ body {
 
 .wrap {
 	flex-wrap: wrap;
+	/* justify-content: space-evenly; */
 }
 
 .header {
@@ -44,7 +45,8 @@ body {
 	background: #555;
 	color: #fff;
 	padding: 10px 15px 7px;
-	margin-right: 10px;
+	/* margin-right: 10px; */
+	margin: 10px;
 }
 
 .shop > * {
@@ -91,4 +93,12 @@ body {
 
 .shop .coffee p {
 	font-size: .8rem;
+}
+
+/* Smartphones */
+@media screen and (max-width: 500px) {
+.wrap {
+	/* flex-wrap: wrap; */
+	justify-content: space-evenly;
+}
 }
