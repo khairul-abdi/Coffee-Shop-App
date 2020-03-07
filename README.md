@@ -1,4 +1,4 @@
-## Coffee Shop App
+## [Coffee Shop App](https://w9kj3.sse.codesandbox.io/ "Live Demo")
 
 ### In this App, we need 5 dependencies below:
 
